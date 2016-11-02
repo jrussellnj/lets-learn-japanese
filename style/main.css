@@ -1,0 +1,66 @@
+.japanese-item { 
+  font-family: 'Noto Sans Japanese', serif; 
+  font-weight: 200; 
+  margin-top: 30px; 
+  font-size: 5em; 
+  text-align: center;
+ }
+
+#meaning {
+	display: none;
+}
+
+h4 {
+  margin: 3em 0 1em !important;
+}
+
+
+.answer-container {
+  cursor: pointer;
+  position: relative;
+  width: 30em;
+  margin: 2em auto !important;
+  height: 5em;
+}
+
+.answer-container blockquote {
+  display: block;
+}
+
+.answer-container:after {
+  position: absolute;
+  top: -60%;
+  left: 0;
+  font-size: 12px;
+  font-weight: bold;
+  color: #959595;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  content: "Answer";
+}
+
+
+/* Furigana */
+.has-furigana {
+  display: inline-block;
+  position: relative;
+}
+
+.has-furigana .furigana {
+  display: inline-block;
+  position: absolute;
+  top: -60%;
+  font-size: .5em;
+  left: 0;
+  white-space: nowrap;
+}
+
+/* Form */
+#fancyform {
+  margin: 1em 0;
+}
+
+#fancyform .form-group {
+  margin: 1em 0 !important;
+}
+
