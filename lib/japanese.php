@@ -1,7 +1,7 @@
 <?
 
 class Japanese {
-  private static $mysqli;
+  protected static $mysqli;
  
   private static function dbConnect() {
     // Connect to the database
@@ -38,7 +38,6 @@ class Japanese {
   }
 
   public static function get_vocab($from_human_japanese = null) {
-
     if ($from_human_japanese == null) {
       $preparedSql = self::$mysqli->prepare('select id, japanese, english from vocab order by japanese');
     }
