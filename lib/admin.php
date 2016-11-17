@@ -36,7 +36,7 @@ class Admin extends Japanese {
     }
     else {
       $preparedSql = self::$mysqli->prepare('insert into vocab set english = ?, japanese = ?, from_human_japanese = ?');
-      $preparedSql->bind_param('ssii', $item['english'], $item['japanese'], $human_japanese);
+      $preparedSql->bind_param('ssi', $item['english'], $item['japanese'], $human_japanese);
     }
 
     return $preparedSql->execute();
